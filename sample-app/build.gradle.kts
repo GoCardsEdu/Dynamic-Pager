@@ -9,7 +9,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "pl.gocards.dynamic_pager"
+        applicationId = "pl.gocards.dynamic_pager.sample_app"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
@@ -38,7 +38,7 @@ android {
 }
 
 dependencies {
-
+    implementation(project(":dynamic-pager"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
